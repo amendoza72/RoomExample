@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         val userDao = db.userDao()
 
-        var user = User(1, "Antonio", "Mendoza")
+        var user = User(3, "Antonio", "Mendoza")
         userDao.insertAll(user)
         val users: List<User> = userDao.getAll()
 
